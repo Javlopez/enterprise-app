@@ -12,6 +12,7 @@ var appName = "accountservice"
 
 func main() {
 	fmt.Printf("Starting %v\n", appName)
+	initializeBoltClient()
 	service.StartWebServer("6767")
 }
 
