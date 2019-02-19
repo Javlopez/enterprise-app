@@ -16,10 +16,11 @@ func NewRouter() *mux.Router {
 		// Attach each route, uses a Builder-like pattern to set each route up.
 
 		router.Methods(route.Method).
-			Path(route.Pattern).
-			Name(route.Name).
-			Handler(route.HandlerFunc)
-
+		Path(route.Pattern).
+		Name(route.Name).
+		Handler(route.HandlerFunc)
+		
 	}
+
 	return router
 }

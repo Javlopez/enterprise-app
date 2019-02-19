@@ -16,3 +16,11 @@ func StartWebServer(port string) {
 		log.Println("Error: " + err.Error())
 	}
 }
+
+/*
+	r := NewRouter()
+	http.Handle("/", r)
+
+	logrus.Infof("Starting HTTP service at %v", port)
+	err := http.ListenAndServe(":"+port, nil)
+	*/
